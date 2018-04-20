@@ -1,0 +1,21 @@
+{
+  "name": "getintodevops-docker1",
+  "version": "1.0.0",
+  "description": "A PHP application",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.pp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhatiarahul1993/php/"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "dockerfile"
+  ],
+  "author": "miiro@getintodevops.com",
+  "license": "ISC"
+}
