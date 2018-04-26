@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 		 
-		app = docker.build("rahulishu1993/php")
+		app = docker.build("rahul/php")
     }
 
     stage('Test image') {
