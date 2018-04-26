@@ -36,7 +36,7 @@ node {
 	
 	stage('Deploy Service') {
         app.inside {
-            sh 'docker ps'
+            sh 'whoami'
         }
     }
 	
