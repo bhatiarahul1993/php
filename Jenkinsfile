@@ -35,7 +35,7 @@ node {
     }
 	
 	stage('Deploy Service') {
-		docker.withServer('tcp://40.123.26.100:2376', 'my-docker-cred') {
+		docker.withServer('tcp://40.123.26.100:2375', 'my-docker-cred') {
 		docker.image('mysql:5').withRun('-p 3306:3306') {
 				/* do things */
 			}
