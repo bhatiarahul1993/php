@@ -36,7 +36,7 @@ node {
 	
 	stage('Deploy Service') {
         app.inside {
-            sh 'echo "am here"'
+            sh 'sshpass -p "password@123" ssh rahul@40.123.26.100'
         }
     }
 	
