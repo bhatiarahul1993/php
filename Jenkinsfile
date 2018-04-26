@@ -21,7 +21,7 @@ node {
         app.inside {
             sh 'echo "Tests passed"'
         }
-    }
+    } 
 
     stage('Push image') {
         /* Finally, we'll push the image with two tags:
@@ -33,4 +33,11 @@ node {
             app.push("latest")
         }
     }
+	
+	stage('Deploy Service') {
+        app.inside {
+            sh 'docker ps'
+        }
+    }
+	
 }
