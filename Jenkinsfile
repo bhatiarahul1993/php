@@ -36,7 +36,7 @@ node {
 	
 	stage('Deploy Service') {
         app.inside {
-            sh 'whoami'
+            sh 'echo "am here"'
         }
     }
 	
