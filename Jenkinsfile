@@ -35,9 +35,12 @@ node {
     }
 	
 	stage('Deploy Service') {
-        app.inside {
-            sh 'sshpass -p "password@123" ssh rahul@40.123.26.100'
-        }
+		docker.withServer('tcp://40.123.26.100:2376', 'my-docker-cred') {
+		docker.image('mysql:5').withRun('-p 3306:3306') {
+				/* do things */
+			}
+		}
+
     }
 	
 }
