@@ -33,14 +33,4 @@ node {
             app.push("latest")
         }
     }
-	
-	stage('Deploy Service') {
-		app.inside {
-            sh 'export DOCKER_HOST=tcp://10.0.0.4:2376'
-			sh 'docker ps'
-			sh 'export DOCKER_HOST=t""'
-        }
-
-    }
-	
 }
